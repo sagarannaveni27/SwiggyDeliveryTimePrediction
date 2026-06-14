@@ -11,7 +11,7 @@ with open(r'model.pkl', 'rb') as file:
 df = pd.read_csv(r'swiggy cleaned_data.csv')
 
 #input
-Age = st.number_input('Enter the age', min_value=18, max_value=50)
+Age = st.number_input('Enter age', min_value=18, max_value=50)
 Ratings = st.slider('Enter the rating', 1.0, 5.0, 4.0, 0.1)
 Weather = st.selectbox('Enter weather type', df['weather'].unique())
 Traffic = st.selectbox('Enter the traffic', df['traffic'].unique())
